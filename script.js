@@ -11,6 +11,7 @@ let errorCount = 0;
 let startTime;
 let questionText = "";
 
+
 // Load and display question
 fetch("./texts.json")
   .then((res) => res.json())
@@ -98,6 +99,7 @@ const gameOver = () => {
 const closeModal = () => {
   modalBackground.classList.toggle("hidden");
   resultModal.classList.toggle("hidden");
+
 };
 
 const start = () => {
@@ -116,16 +118,16 @@ const start = () => {
       document.addEventListener("keydown", typeController);
       countdownOverlay.style.display = "none";
       display.classList.remove("inactive");
-
       clearInterval(startCountdown);
       startTime = new Date().getTime();
+
     }
     count--;
   }, 1000);
 };
 
 // START Countdown
-document.addEventListener("click", start);
+// document.addEventListener("click", start);
 
 // If history exists, show it
 displayHistory();
