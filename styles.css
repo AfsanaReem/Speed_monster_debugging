@@ -16,7 +16,8 @@ body {
   margin: 0 auto;
 }
 
-#question {
+#question,
+.question {
   height: 100px;
   display: flex;
   align-items: center;
