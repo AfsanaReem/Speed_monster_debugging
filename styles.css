@@ -205,6 +205,6 @@ button {
     display: grid;
     grid-template-columns: repeat(3, 300px);
     grid-gap: 50px;
-    /* justify-content: space-around; */
+
   }
 }
